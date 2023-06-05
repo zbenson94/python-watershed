@@ -5,8 +5,7 @@ This routine implements the FogBank algorithm from J.Chalfoun et al., "Fog Bank:
 
 The routine takes a binary segmented mask and separates out touching objects (see image below). The FogBank routine avoids oversegmentation from typical watershed algorithms.
 
-![watershed](https://github.com/zbenson94/python-watershed/assets/55454108/c8bc3d7c-2df6-4bf3-a018-b681748dc70d)
-
+![watershed](https://github.com/zbenson94/python-watershed/blob/ed9a8231d32823891dea603d2c4a609eb2b37edc/watershed.png)
 
 
 # Usage:
