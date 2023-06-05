@@ -33,4 +33,15 @@ fb  = FogBank(img, **fogbank_parms)
 img_labeled = fb.run()
 
 
+# Installation Instructions (if python is installed)
+
+python -m venv venv
+
+source venv/bin/activate
+
+python -m pip install --upgrade pip
+
+pip install -r requirements.txt
+
+
 
