@@ -9,38 +9,27 @@ The routine takes a binary segmented mask and separates out touching objects (se
 
 
 # Usage:
-
+```python
 from python_watershed import FogBank
 
 import skimage.io as skio
 
-######  # Common input parameters
 fogbank_parms = {
-  'min_size': 8,
-  'min_object_size': 50,
-  'erode_size': 2
+  'min_size':         8,
+  'min_object_size':  50,
+  'erode_size':       2
 }
-
-###### # Load binary image
-img = skio.imread(path_to_image)
-
-
-fb  = FogBank(img, **fogbank_parms)
-
-
-
-img_labeled = fb.run()
-
+img          = skio.imread(path_to_image)
+img_labeled  = FogBank(img, **fogbank_parms).run()
+```
 
 # Installation Instructions (if python is installed)
-
+```bash
 python -m venv venv
-
 source venv/bin/activate
-
 python -m pip install --upgrade pip
-
 pip install -r requirements.txt
+```
 
 
 
